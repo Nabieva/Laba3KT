@@ -1,0 +1,20 @@
+<html>
+
+<body>
+
+<div id=pole>
+<input id="Km" type="text" placeholder="Километры в час"> 
+</div>
+<input type="button" value="Вычислить" onclick="det()"> <br> 
+<input id="det" type="text" placeholder="Метры в секунду">
+</body>
+</html>
+
+<script type="text/javascript">
+var otvet, Km;
+function det() {
+KM=parseInt(document.getElementById("Km").value);
+otvet=KM*(1000/3600);
+document.getElementById("det").value=String(otvet);
+               }
+</script> 
